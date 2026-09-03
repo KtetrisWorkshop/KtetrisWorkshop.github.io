@@ -1,0 +1,22 @@
+# Node modules
+node_modules/
+
+# MacOS system files
+DS_Store
+
+# Log files
+*.log
+
+# Editor settings
+.idea/
+.vscode/
+
+# VuePress temporary and cache directories
+docs/.vuepress/.temp/
+docs/.vuepress/.cache/
+
+# VuePress build output
+docs/.vuepress/dist/
+
+*.bak
+*.swp
