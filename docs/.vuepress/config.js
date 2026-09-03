@@ -24,6 +24,8 @@ export default defineUserConfig({
     ],
     sidebar: [
 		"README.md",
+		"Glossary.md",
+		"Contribution Guidelines.md"
     ]
   }),
 
