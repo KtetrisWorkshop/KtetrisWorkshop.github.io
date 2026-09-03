@@ -1,5 +1,7 @@
 # 术语表
 
+![Interface Glossary](<img/Interface Glossary.png>)
+
 ## 游戏区域
 
 - **playfield**: 游戏区域，通常由10列40行的 cell 组成的网格（grid），通常 playfield 包含了可视部分和非可视部分。
@@ -9,6 +11,16 @@
 - **field frame**: playfield 左侧、右侧、底边的框架，用于限制 descending piece 的可移动和可旋转的区域。
 
 - **skyline**: 游戏可视 playfield 的最顶端的一行，通常是第20行；piece 从 skyline 中间落下（descend）。
+
+## 游戏失败条件
+
+- **block out**: 将要生成的 piece 由于被 matrix 的 existing block 阻挡无法生成。
+
+- **lock out**: 当 piece 完全被 lock down 在 skyline 之上。
+   - **lock down**: 锁定，一切 falling piece 着陆（land）在 surface 上后无法一段时间后就无法对 piece 进行操作，通常时间为 0.5s。
+
+- **top out**: 表示放置（place）的方块越过 top out line。
+    - **top out line**: playfield 的最上沿，通常是 skyline 之上的第 20 行，也是游戏程序最大可能达到的高度。
 
 ## 方块
 
